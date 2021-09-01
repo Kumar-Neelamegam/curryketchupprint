@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "300068795939",
+    "project_id": "curryandketchup-11506",
+    "storage_bucket": "curryandketchup-11506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300068795939:android:4370742cb63a93b39ea396",
+        "android_client_info": {
+          "package_name": "com.curryandketchup.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300068795939-34vou7dai6sa99siis767h4o3573jbod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRQFI_9ShynjYZnCxcmFnQCuDMRNDuR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300068795939-34vou7dai6sa99siis767h4o3573jbod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300068795939:android:924d2b3a6386b50b9ea396",
+        "android_client_info": {
+          "package_name": "com.example.curryketchup_print"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300068795939-34vou7dai6sa99siis767h4o3573jbod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRQFI_9ShynjYZnCxcmFnQCuDMRNDuR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300068795939-34vou7dai6sa99siis767h4o3573jbod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
