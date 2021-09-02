@@ -84,22 +84,23 @@ public class GetPrinterWorker extends Worker {
             str1.append("[L]\n");
             str1.append("[L]\n");
             str1.append("[C]<font size='normal'>CURRY AND KETCHUP</font>\n");
-            str1.append("[C]<font size='big'>ORDER NO:" + order.getTransid() + "</font>\n");
+            str1.append("[C]<font size='normal'>ORDER NO:" + order.getTransid() + "</font>\n");
             str1.append("[L]================================\n");
-            str1.append("[L]<font size='big'>" + order.getMembername() + "</font>\n");
+            str1.append("[L]<font size='normal'>" + order.getMembername() + "</font>\n");
             str1.append("[L]<font size='normal'>" + order.getDate() + "</font>\n");
-            str1.append("[L]<font size='normal'>" + order.getSpecialnotes() + "</font>\n");
+            if(order.getSpecialnotes()!=null && order.getSpecialnotes().length()>0){
+            str1.append("[L]<font size='normal'>" + order.getSpecialnotes() + "</font>\n");}
             str1.append("[C]================================\n");
             int totalPrice = 0;
             int ordersno = 1;
             for (OrderItem orderItem : order.getOrderItems()) {
                 str2.append("[L]"+orderItem.getItemcategory()+"\n");
-                str2.append("[L]<font size='big'>"+ordersno + ":" + orderItem.getItemname() + "[R](" + orderItem.getQuantity() + ")</font>\n");
+                str2.append("[L]<font size='tall'>"+ordersno + ":" + orderItem.getItemname() + "[R](" + orderItem.getQuantity() + ")</font>\n");
                 totalPrice += Integer.parseInt(orderItem.getItemprice());
                 ordersno++;
             }
             str2.append("[C]================================\n");
-            str2.append("[R]<font size='big'>TOTAL PRICE :[R]" + totalPrice + ".kr</font>\n");
+            str2.append("[R]<font size='normal'>TOTAL PRICE :[R]" + totalPrice + ".kr</font>\n");
             callPrinter(str1, str2, TRANSID);
         }
 
